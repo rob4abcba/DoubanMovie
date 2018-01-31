@@ -11,6 +11,7 @@ import com.haocent.android.doubanmovie.data.MovieSubjectCommentsBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectInfoBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectPhotosBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectReviewsBean;
+import com.haocent.android.doubanmovie.data.MovieTop250Bean;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;
@@ -184,4 +185,20 @@ public interface DoubanMovieService {
      */
     @GET("coming_soon")
     Observable<MovieComingSoonBean> getMovieComingSoon(@Query("apikey") String apikey);
+
+    /**
+     * Top250
+     *
+     * apikey：固定值 0b2bdeda43b5688921839c8ecb20399b
+     * city：所在城市，例如北京、上海等
+     * start：分页使用，表示第几页
+     * count：分页使用，表示数量
+     * client：客户端信息。可为空
+     * udid：用户 id。可为空
+     *
+     * 简：https://api.douban.com/v2/movie/top250?apikey=0b2bdeda43b5688921839c8ecb20399b
+     * 全：https://api.douban.com/v2/movie/top250?apikey=0b2bdeda43b5688921839c8ecb20399b&city=%E5%8C%97%E4%BA%AC&start=0&count=100&client=&udid=
+     */
+    @GET("top250")
+    Observable<MovieTop250Bean> getMovieTop250(@Query("apikey") String apikey);
 }

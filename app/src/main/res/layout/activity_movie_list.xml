@@ -20,4 +20,12 @@
         android:layout_weight="1"
         android:text="即将上映" />
 
+    <Button
+        android:id="@+id/btn_list_top250"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="Top250" />
+
 </LinearLayout>

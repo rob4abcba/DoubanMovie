@@ -53,6 +53,8 @@
         <activity android:name=".ui.list.MovieListInTheatersActivity" />
         <!-- 即将上映 -->
         <activity android:name=".ui.list.MovieListComingSoonActivity" />
+        <!-- Top 250 -->
+        <activity android:name=".ui.list.MovieListTop250Activity" />
 
     </application>
 
