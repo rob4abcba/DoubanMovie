@@ -230,4 +230,5 @@ public interface DoubanMovieService {
      */
     @GET("us_box")
     Observable<MovieUsBoxBean> getMovieUsBox(@Query("apikey") String apikey);
+
 }

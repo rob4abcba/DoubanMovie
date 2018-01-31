@@ -12,6 +12,7 @@ import java.util.List;
 
 public class MovieUsBoxBean {
 
+
     private String date;
     private String title;
     private List<SubjectsBean> subjects;

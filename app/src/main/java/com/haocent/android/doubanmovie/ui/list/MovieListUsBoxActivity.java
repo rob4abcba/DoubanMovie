@@ -25,6 +25,7 @@ import io.reactivex.schedulers.Schedulers;
 
 public class MovieListUsBoxActivity extends AppCompatActivity {
 
+
     private static final String TAG = MovieListUsBoxActivity.class.getSimpleName();
 
     private DoubanMovieService mService;

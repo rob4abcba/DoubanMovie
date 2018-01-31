@@ -17,6 +17,7 @@ import com.haocent.android.doubanmovie.R;
 
 public class MovieListActivity extends AppCompatActivity implements View.OnClickListener {
 
+
     private static final String TAG = MovieListActivity.class.getSimpleName();
 
     @Override

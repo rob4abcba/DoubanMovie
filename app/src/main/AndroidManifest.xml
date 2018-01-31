@@ -60,6 +60,7 @@
         <!-- 北美票房榜 -->
         <activity android:name=".ui.list.MovieListUsBoxActivity" />
 
+
     </application>
 
 </manifest>
