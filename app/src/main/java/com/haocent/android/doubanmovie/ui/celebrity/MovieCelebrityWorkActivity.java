@@ -69,6 +69,8 @@ public class MovieCelebrityWorkActivity extends AppCompatActivity {
                     @Override
                     public void onNext(MovieCelebrityWorksBean movieCelebrityWorksBean) {
                         Log.d(TAG, "onNext: ");
+
+                        // TODO
                     }
 
                     @Override
