@@ -33,10 +33,12 @@ public class MovieListActivity extends AppCompatActivity implements View.OnClick
         Button btnListInTheaters = findViewById(R.id.btn_list_in_theaters);
         Button btnListComingSoon = findViewById(R.id.btn_list_coming_soon);
         Button btnListTop250 = findViewById(R.id.btn_list_top250);
+        Button btnListWeekly = findViewById(R.id.btn_list_weekly);
 
         btnListInTheaters.setOnClickListener(this);
         btnListComingSoon.setOnClickListener(this);
         btnListTop250.setOnClickListener(this);
+        btnListWeekly.setOnClickListener(this);
     }
 
     @Override
@@ -53,6 +55,10 @@ public class MovieListActivity extends AppCompatActivity implements View.OnClick
             case R.id.btn_list_top250:
                 Intent intentTop250 = new Intent(this, MovieListTop250Activity.class);
                 startActivity(intentTop250);
+                break;
+            case R.id.btn_list_weekly:
+                Intent intentWeekly = new Intent(this, MovieListWeeklyActivity.class);
+                startActivity(intentWeekly);
                 break;
             default:
                 break;

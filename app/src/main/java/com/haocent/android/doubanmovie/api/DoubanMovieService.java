@@ -12,6 +12,7 @@ import com.haocent.android.doubanmovie.data.MovieSubjectInfoBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectPhotosBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectReviewsBean;
 import com.haocent.android.doubanmovie.data.MovieTop250Bean;
+import com.haocent.android.doubanmovie.data.MovieWeeklyBean;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;
@@ -201,4 +202,18 @@ public interface DoubanMovieService {
      */
     @GET("top250")
     Observable<MovieTop250Bean> getMovieTop250(@Query("apikey") String apikey);
+
+    /**
+     * 口碑榜
+     *
+     * apikey：固定值 0b2bdeda43b5688921839c8ecb20399b
+     * city：所在城市，例如北京、上海等
+     * client：客户端信息。可为空
+     * udid：用户 id。可为空
+     *
+     * 简：https://api.douban.com/v2/movie/weekly?apikey=0b2bdeda43b5688921839c8ecb20399b
+     * 全：https://api.douban.com/v2/movie/weekly?apikey=0b2bdeda43b5688921839c8ecb20399b&city=%E5%8C%97%E4%BA%AC&client=&udid=
+     */
+    @GET("weekly")
+    Observable<MovieWeeklyBean> getMovieWeekly(@Query("apikey") String apikey);
 }
