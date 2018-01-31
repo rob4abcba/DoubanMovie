@@ -1,5 +1,8 @@
 package com.haocent.android.doubanmovie.api;
 
+import com.haocent.android.doubanmovie.data.MovieCelebrityInfoBean;
+import com.haocent.android.doubanmovie.data.MovieCelebrityPhotosBean;
+import com.haocent.android.doubanmovie.data.MovieCelebrityWorksBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectCommentsBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectInfoBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectPhotosBean;
@@ -81,4 +84,39 @@ public interface DoubanMovieService {
     @GET("subject/{movieId}/comments")
     Observable<MovieSubjectCommentsBean> getMovieSubjectComments(@Path("movieId") String movieId,
                                                                  @Query("apikey") String apikey);
+
+    /* 影人条目 */
+
+    /**
+     * 影人条目信息
+     *
+     * apikey：固定值 0b2bdeda43b5688921839c8ecb20399b
+     *
+     * 全：https://api.douban.com/v2/movie/celebrity/1044707?apikey=0b2bdeda43b5688921839c8ecb20399b
+     */
+    @GET("celebrity/{celebrityId}")
+    Observable<MovieCelebrityInfoBean> getMovieCelebrityInfo(@Path("celebrityId") String celebrityId,
+                                                             @Query("apikey") String apikey);
+
+    /**
+     * 影人剧照
+     *
+     * apikey：固定值 0b2bdeda43b5688921839c8ecb20399b
+     *
+     * 全：https://api.douban.com/v2/movie/celebrity/1044707/photos?apikey=0b2bdeda43b5688921839c8ecb20399b
+     */
+    @GET("celebrity/{celebrityId}/photos")
+    Observable<MovieCelebrityPhotosBean> getMovieCelebrityPhotos(@Path("celebrityId") String celebrityId,
+                                                                 @Query("apikey") String apikey);
+
+    /**
+     * 影人作品
+     *
+     * apikey：固定值 0b2bdeda43b5688921839c8ecb20399b
+     *
+     * 全：https://api.douban.com/v2/movie/celebrity/1044707/works?apikey=0b2bdeda43b5688921839c8ecb20399b
+     */
+    @GET("celebrity/{celebrityId}/works")
+    Observable<MovieCelebrityWorksBean> getMovieCelebrityWorks(@Path("celebrityId") String celebrityId,
+                                                               @Query("apikey") String apikey);
 }

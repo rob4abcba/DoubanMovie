@@ -14,4 +14,7 @@ public class Constant {
 
     // 电影 ID （例：移动迷宫3：死亡解药）
     public static final String MOVIE_ID = "26004132";
+
+    // 演员 ID （例：道恩·强森）
+    public static final String CELEBRITY_ID = "1044707";
 }

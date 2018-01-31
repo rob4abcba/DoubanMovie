@@ -31,6 +31,15 @@
         <!-- 电影条目短评 -->
         <activity android:name=".ui.subject.MovieSubjectCommentsActivity" />
 
+        <!-- 影人条目 -->
+        <activity android:name=".ui.celebrity.MovieCelebrityActivity" />
+        <!-- 影人条目信息 -->
+        <activity android:name=".ui.celebrity.MovieCelebrityInfoActivity" />
+        <!-- 影人剧照 -->
+        <activity android:name=".ui.celebrity.MovieCelebrityPhotoActivity" />
+        <!-- 影人作品 -->
+        <activity android:name=".ui.celebrity.MovieCelebrityWorkActivity" />
+
     </application>
 
 </manifest>
