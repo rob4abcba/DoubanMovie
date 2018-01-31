@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_subject_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="电影条目信息"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_subject_photo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="电影条目剧照"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_subject_review"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="电影条目长评"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_subject_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="电影条目短评"
+        android:textSize="20sp" />
+
+</LinearLayout>

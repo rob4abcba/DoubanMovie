@@ -12,13 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 电影条目 -->
+        <activity android:name=".ui.subject.MovieSubjectActivity" />
+        <!-- 电影条目信息 -->
+        <activity android:name=".ui.subject.MovieSubjectInfoActivity" />
+        <!-- 电影条目剧照 -->
+        <activity android:name=".ui.subject.MovieSubjectPhotosActivity" />
+        <!-- 电影条目长评 -->
+        <activity android:name=".ui.subject.MovieSubjectReviewsActivity" />
+        <!-- 电影条目短评 -->
+        <activity android:name=".ui.subject.MovieSubjectCommentsActivity" />
 
     </application>
 
