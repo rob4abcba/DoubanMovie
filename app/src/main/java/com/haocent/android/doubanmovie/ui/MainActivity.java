@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.haocent.android.doubanmovie.R;
 import com.haocent.android.doubanmovie.ui.celebrity.MovieCelebrityActivity;
+import com.haocent.android.doubanmovie.ui.search.MovieSearchActivity;
 import com.haocent.android.doubanmovie.ui.subject.MovieSubjectActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -25,9 +26,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
         Button btnMovieSubject = findViewById(R.id.btn_movie_subject);
         Button btnMovieCelebrity = findViewById(R.id.btn_movie_celebrity);
+        Button btnMovieSearch = findViewById(R.id.btn_movie_search);
 
         btnMovieSubject.setOnClickListener(this);
         btnMovieCelebrity.setOnClickListener(this);
+        btnMovieSearch.setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +44,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intentMovieCelebrity = new Intent(this, MovieCelebrityActivity.class);
                 startActivity(intentMovieCelebrity);
                 break;
+            case R.id.btn_movie_search:
+                Intent intentMovieSearch = new Intent(this, MovieSearchActivity.class);
+                startActivity(intentMovieSearch);
             default:
                 break;
         }
