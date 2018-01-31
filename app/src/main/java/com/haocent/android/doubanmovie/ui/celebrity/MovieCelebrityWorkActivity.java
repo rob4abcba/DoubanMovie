@@ -64,7 +64,6 @@ public class MovieCelebrityWorkActivity extends AppCompatActivity {
                     @Override
                     public void onSubscribe(Disposable d) {
                         Log.d(TAG, "onSubscribe: ");
-
                     }
 
                     @Override
