@@ -5,6 +5,7 @@ import com.haocent.android.doubanmovie.data.MovieCelebrityPhotosBean;
 import com.haocent.android.doubanmovie.data.MovieCelebrityWorksBean;
 import com.haocent.android.doubanmovie.data.MovieComingSoonBean;
 import com.haocent.android.doubanmovie.data.MovieInTheatersBean;
+import com.haocent.android.doubanmovie.data.MovieNewMoviesBean;
 import com.haocent.android.doubanmovie.data.MovieSearchByQueryBean;
 import com.haocent.android.doubanmovie.data.MovieSearchByTagBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectCommentsBean;
@@ -231,4 +232,16 @@ public interface DoubanMovieService {
     @GET("us_box")
     Observable<MovieUsBoxBean> getMovieUsBox(@Query("apikey") String apikey);
 
+    /**
+     * 新片榜
+     *
+     * apikey：固定值 0b2bdeda43b5688921839c8ecb20399b
+     * client：客户端信息。可为空
+     * udid：用户 id。可为空
+     *
+     * 简：https://api.douban.com/v2/movie/new_movies?apikey=0b2bdeda43b5688921839c8ecb20399b
+     * 全：https://api.douban.com/v2/movie/new_movies?apikey=0b2bdeda43b5688921839c8ecb20399b&client=&udid=
+     */
+    @GET("new_movies")
+    Observable<MovieNewMoviesBean> getMovieNewMovies(@Query("apikey") String apikey);
 }
