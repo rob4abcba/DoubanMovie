@@ -47,6 +47,9 @@
         <!-- 根据标签搜索 -->
         <activity android:name=".ui.search.MovieSearchTagActivity" />
 
+        <!-- 榜单 -->
+        <activity android:name=".ui.list.MovieListActivity" />
+
     </application>
 
 </manifest>

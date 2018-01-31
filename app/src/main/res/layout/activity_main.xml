@@ -29,4 +29,12 @@
         android:layout_weight="1"
         android:text="搜索" />
 
+    <Button
+        android:id="@+id/btn_movie_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="榜单" />
+
 </LinearLayout>
