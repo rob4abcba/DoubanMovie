@@ -31,8 +31,10 @@ public class MovieListActivity extends AppCompatActivity implements View.OnClick
         setTitle("榜单");
 
         Button btnListInTheaters = findViewById(R.id.btn_list_in_theaters);
+        Button btnListComingSoon = findViewById(R.id.btn_list_coming_soon);
 
         btnListInTheaters.setOnClickListener(this);
+        btnListComingSoon.setOnClickListener(this);
     }
 
     @Override
@@ -42,6 +44,9 @@ public class MovieListActivity extends AppCompatActivity implements View.OnClick
                 Intent intentInTheaters = new Intent(this, MovieListInTheatersActivity.class);
                 startActivity(intentInTheaters);
                 break;
+            case R.id.btn_list_coming_soon:
+                Intent intentComingSoon = new Intent(this, MovieListComingSoonActivity.class);
+                startActivity(intentComingSoon);
             default:
                 break;
         }

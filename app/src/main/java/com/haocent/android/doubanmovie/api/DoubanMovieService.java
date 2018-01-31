@@ -3,6 +3,7 @@ package com.haocent.android.doubanmovie.api;
 import com.haocent.android.doubanmovie.data.MovieCelebrityInfoBean;
 import com.haocent.android.doubanmovie.data.MovieCelebrityPhotosBean;
 import com.haocent.android.doubanmovie.data.MovieCelebrityWorksBean;
+import com.haocent.android.doubanmovie.data.MovieComingSoonBean;
 import com.haocent.android.doubanmovie.data.MovieInTheatersBean;
 import com.haocent.android.doubanmovie.data.MovieSearchByQueryBean;
 import com.haocent.android.doubanmovie.data.MovieSearchByTagBean;
@@ -167,4 +168,20 @@ public interface DoubanMovieService {
      */
     @GET("in_theaters")
     Observable<MovieInTheatersBean> getMovieInTheaters(@Query("apikey") String apikey);
+
+    /**
+     * 即将上映
+     *
+     * apikey：固定值 0b2bdeda43b5688921839c8ecb20399b
+     * city：所在城市，例如北京、上海等
+     * start：分页使用，表示第几页
+     * count：分页使用，表示数量
+     * client：客户端信息。可为空
+     * udid：用户 id。可为空
+     *
+     * 简：https://api.douban.com/v2/movie/coming_soon?apikey=0b2bdeda43b5688921839c8ecb20399b
+     * 全：https://api.douban.com/v2/movie/coming_soon?apikey=0b2bdeda43b5688921839c8ecb20399b&city=%E5%8C%97%E4%BA%AC&start=0&count=100&client=&udid=
+     */
+    @GET("coming_soon")
+    Observable<MovieComingSoonBean> getMovieComingSoon(@Query("apikey") String apikey);
 }

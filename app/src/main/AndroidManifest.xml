@@ -51,6 +51,8 @@
         <activity android:name=".ui.list.MovieListActivity" />
         <!-- 正在热映 -->
         <activity android:name=".ui.list.MovieListInTheatersActivity" />
+        <!-- 即将上映 -->
+        <activity android:name=".ui.list.MovieListComingSoonActivity" />
 
     </application>
 
