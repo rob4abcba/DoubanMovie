@@ -49,6 +49,8 @@
 
         <!-- 榜单 -->
         <activity android:name=".ui.list.MovieListActivity" />
+        <!-- 正在热映 -->
+        <activity android:name=".ui.list.MovieListInTheatersActivity" />
 
     </application>
 
