@@ -40,6 +40,9 @@
         <!-- 影人作品 -->
         <activity android:name=".ui.celebrity.MovieCelebrityWorkActivity" />
 
+        <!-- 搜索 -->
+        <activity android:name=".ui.search.MovieSearchActivity" />
+
     </application>
 
 </manifest>
