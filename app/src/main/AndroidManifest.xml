@@ -44,6 +44,8 @@
         <activity android:name=".ui.search.MovieSearchActivity" />
         <!-- 根据字段搜索 -->
         <activity android:name=".ui.search.MovieSearchQActivity" />
+        <!-- 根据标签搜索 -->
+        <activity android:name=".ui.search.MovieSearchTagActivity" />
 
     </application>
 

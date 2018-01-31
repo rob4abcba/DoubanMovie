@@ -12,4 +12,12 @@
         android:layout_weight="1"
         android:text="根据字段搜索" />
 
+    <Button
+        android:id="@+id/btn_search_tag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="根据标签搜索" />
+
 </LinearLayout>

@@ -4,6 +4,7 @@ import com.haocent.android.doubanmovie.data.MovieCelebrityInfoBean;
 import com.haocent.android.doubanmovie.data.MovieCelebrityPhotosBean;
 import com.haocent.android.doubanmovie.data.MovieCelebrityWorksBean;
 import com.haocent.android.doubanmovie.data.MovieSearchByQueryBean;
+import com.haocent.android.doubanmovie.data.MovieSearchByTagBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectCommentsBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectInfoBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectPhotosBean;
@@ -127,15 +128,24 @@ public interface DoubanMovieService {
      * 电影搜索
      *
      * q:字符串
+     * tag:标签
      * start：分页使用，表示第几页
      * count：分页使用，表示数量
      *
      * 全：https://api.douban.com/v2/movie/search?q=张艺谋&apikey=0b2bdeda43b5688921839c8ecb20399b&start=0&count=10
+     * 全：https://api.douban.com/v2/movie/search?tag=喜剧&apikey=0b2bdeda43b5688921839c8ecb20399b&start=0&count=10
      */
-    // 根据人名搜索
+    // 根据字段搜索
     @GET("search")
     Observable<MovieSearchByQueryBean> getMovieSearchByQuery(@Query("q") String q,
                                                              @Query("apikey") String apikey,
                                                              @Query("start") int start,
                                                              @Query("count") int count);
+
+    // 根据标签搜索
+    @GET("search")
+    Observable<MovieSearchByTagBean> getMovieSearchByTag(@Query("tag") String tag,
+                                                         @Query("apikey") String apikey,
+                                                         @Query("start") int start,
+                                                         @Query("count") int count);
 }

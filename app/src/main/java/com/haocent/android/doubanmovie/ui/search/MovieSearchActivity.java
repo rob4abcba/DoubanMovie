@@ -31,17 +31,22 @@ public class MovieSearchActivity extends AppCompatActivity implements View.OnCli
         setTitle("搜索");
 
         Button btnMovieSearchQ = findViewById(R.id.btn_search_q);
+        Button btnMovieSearchTag = findViewById(R.id.btn_search_tag);
 
         btnMovieSearchQ.setOnClickListener(this);
+        btnMovieSearchTag.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_search_q:
-                Intent intentSearchQ = new Intent(this,MovieSearchQActivity.class);
+                Intent intentSearchQ = new Intent(this, MovieSearchQActivity.class);
                 startActivity(intentSearchQ);
                 break;
+            case R.id.btn_search_tag:
+                Intent intentSearchTag = new Intent(this, MovieSearchTagActivity.class);
+                startActivity(intentSearchTag);
             default:
                 break;
         }
