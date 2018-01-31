@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.haocent.android.doubanmovie.R;
 import com.haocent.android.doubanmovie.api.DoubanMovieService;
 import com.haocent.android.doubanmovie.common.Constant;
 import com.haocent.android.doubanmovie.data.MovieInTheatersBean;
@@ -31,6 +32,7 @@ public class MovieListInTheatersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_movie_list_content);
 
         initService();
 
