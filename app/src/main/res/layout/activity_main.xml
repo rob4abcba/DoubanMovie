@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context="com.haocent.android.doubanmovie.ui.MainActivity">
 
     <Button
@@ -11,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="电影条目" />
+        android:text="电影条目"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_movie_celebrity"
@@ -19,7 +21,8 @@
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_weight="1"
-        android:text="影人条目" />
+        android:text="影人条目"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_movie_search"
@@ -27,7 +30,8 @@
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_weight="1"
-        android:text="搜索" />
+        android:text="搜索"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_movie_list"
@@ -35,6 +39,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_weight="1"
-        android:text="榜单" />
+        android:text="榜单"
+        android:textSize="20sp" />
 
 </LinearLayout>
