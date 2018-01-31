@@ -36,4 +36,12 @@
         android:layout_weight="1"
         android:text="口碑榜" />
 
+    <Button
+        android:id="@+id/btn_list_us_box"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="北美票房榜" />
+
 </LinearLayout>

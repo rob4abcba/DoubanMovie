@@ -57,6 +57,8 @@
         <activity android:name=".ui.list.MovieListTop250Activity" />
         <!-- 口碑榜 -->
         <activity android:name=".ui.list.MovieListWeeklyActivity" />
+        <!-- 北美票房榜 -->
+        <activity android:name=".ui.list.MovieListUsBoxActivity" />
 
     </application>
 

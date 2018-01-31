@@ -12,6 +12,7 @@ import com.haocent.android.doubanmovie.data.MovieSubjectInfoBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectPhotosBean;
 import com.haocent.android.doubanmovie.data.MovieSubjectReviewsBean;
 import com.haocent.android.doubanmovie.data.MovieTop250Bean;
+import com.haocent.android.doubanmovie.data.MovieUsBoxBean;
 import com.haocent.android.doubanmovie.data.MovieWeeklyBean;
 
 import io.reactivex.Observable;
@@ -216,4 +217,17 @@ public interface DoubanMovieService {
      */
     @GET("weekly")
     Observable<MovieWeeklyBean> getMovieWeekly(@Query("apikey") String apikey);
+
+    /**
+     * 北美票房榜
+     *
+     * apikey：固定值 0b2bdeda43b5688921839c8ecb20399b
+     * client：客户端信息。可为空
+     * udid：用户 id。可为空
+     *
+     * 简：https://api.douban.com/v2/movie/us_box?apikey=0b2bdeda43b5688921839c8ecb20399b
+     * 全：https://api.douban.com/v2/movie/us_box?apikey=0b2bdeda43b5688921839c8ecb20399b&client=&udid=
+     */
+    @GET("us_box")
+    Observable<MovieUsBoxBean> getMovieUsBox(@Query("apikey") String apikey);
 }
