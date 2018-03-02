@@ -8,7 +8,7 @@
 ```groovy
 implementation 'com.android.support:appcompat-v7:27.0.2'
 
-implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
 implementation 'io.reactivex.rxjava2:rxjava:2.1.10'
 	
 implementation 'com.squareup.retrofit2:retrofit:2.3.0'
