@@ -62,7 +62,7 @@ public class MovieSearchByQueryBean {
 
         private RatingBean rating;
         private String title;
-        private int collect_count;
+        private String collect_count;
         private String mainland_pubdate;
         private boolean has_video;
         private String original_title;
@@ -93,11 +93,11 @@ public class MovieSearchByQueryBean {
             this.title = title;
         }
 
-        public int getCollect_count() {
+        public String getCollect_count() {
             return collect_count;
         }
 
-        public void setCollect_count(int collect_count) {
+        public void setCollect_count(String collect_count) {
             this.collect_count = collect_count;
         }
 
@@ -207,25 +207,25 @@ public class MovieSearchByQueryBean {
 
         public static class RatingBean {
 
-            private int max;
-            private int average;
+            private String max;
+            private String average;
             private DetailsBean details;
             private String stars;
-            private int min;
+            private String min;
 
-            public int getMax() {
+            public String getMax() {
                 return max;
             }
 
-            public void setMax(int max) {
+            public void setMax(String max) {
                 this.max = max;
             }
 
-            public int getAverage() {
+            public String getAverage() {
                 return average;
             }
 
-            public void setAverage(int average) {
+            public void setAverage(String average) {
                 this.average = average;
             }
 
@@ -245,11 +245,11 @@ public class MovieSearchByQueryBean {
                 this.stars = stars;
             }
 
-            public int getMin() {
+            public String getMin() {
                 return min;
             }
 
-            public void setMin(int min) {
+            public void setMin(String min) {
                 this.min = min;
             }
 
