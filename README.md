@@ -1,7 +1,11 @@
 # DoubanMovie
 豆瓣电影API全网最新最全解析
+Dòubàn diànyǐng API quán wǎng zuìxīn zuì quán jiěxī
+Douban movie API all the latest and most complete analysis
 
 网络请求使用 RxJava2 + Retrofit2
+Wǎngluò qǐngqiú shǐyòng RxJava2 + Retrofit2
+Network request using RxJava2 + Retrofit2
 
 # Binaries
 
@@ -25,6 +29,8 @@ implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
 Additional binaries and dependency information for can be found at [http://search.maven.org](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.reactivex.rxjava2%22%20a%3A%22rxandroid%22).
 
 # 项目文章地址：
+# Xiàngmù wénzhāng dìzhǐ:
+# Project article address:
 https://www.jianshu.com/p/a7e51129b042
 
 ### License
